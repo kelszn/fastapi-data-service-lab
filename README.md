@@ -1,5 +1,8 @@
 # FastAPI CRUD Learning Lab
 
+**Classification:** Technical learning lab  
+**Portfolio role:** Source material for CareerSignal's later serving layer—not a flagship project
+
 A small in-memory REST API built to practise FastAPI routing, Pydantic request validation and HTTP error handling.
 
 This is a learning lab, not a production service. Data is stored in a Python list and resets whenever the application restarts.
@@ -81,3 +84,7 @@ curl -X POST "http://127.0.0.1:8000/posts" \
 ## Tools
 
 Python · FastAPI · Pydantic · Uvicorn · REST · HTTP status handling
+
+## Attribution and ownership
+
+This is an original practice implementation developed during API study. It may receive AI-assisted code or documentation improvements, which will be labelled where material. It is not presented as production experience or as a completed CareerSignal component.
