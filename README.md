@@ -3,11 +3,11 @@
 **Classification:** Technical learning lab  
 **Portfolio role:** Source material for CareerSignal's later serving layer—not a flagship project
 
-A small in-memory REST API built to practise FastAPI routing, Pydantic request validation and HTTP error handling.
+I built this small in-memory REST API to understand how a data service should accept, validate, find, replace and delete records through clear HTTP contracts.
 
 This is a learning lab, not a production service. Data is stored in a Python list and resets whenever the application restarts.
 
-## Implemented endpoints
+## What the API currently does
 
 | Method | Route | Behaviour |
 |---|---|---|
@@ -19,7 +19,7 @@ This is a learning lab, not a production service. Data is stored in a Python lis
 | `PUT` | `/posts/{id}` | Replace a post while preserving its ID |
 | `DELETE` | `/posts/{id}` | Remove a post or return a 404 |
 
-## Data model
+## Record contract
 
 A new post accepts:
 
@@ -81,9 +81,9 @@ curl -X POST "http://127.0.0.1:8000/posts" \
 4. Return consistent response models.
 5. Add logging, configuration and containerised setup.
 
-## Tools
+## Concepts and implementation
 
-Python · FastAPI · Pydantic · Uvicorn · REST · HTTP status handling
+The lab focuses on resource identity, request validation, predictable error responses and clear endpoint behaviour. The current implementation uses FastAPI, Pydantic and an in-memory Python store, so it is useful for learning the API contract but does not yet demonstrate persistence or production operations.
 
 ## Attribution and ownership
 
